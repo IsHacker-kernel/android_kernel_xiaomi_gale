@@ -1,14 +1,19 @@
-# Custom Kernel for Poco C65 / Redmi 13C (gale/gust)
-## Overview
-This is a custom kernel source for the Poco C65 / Redmi 13C devices (codename: gale/gust). It is based on the ColorX kernel, which itself is a subset of the Myuri kernel. The primary modification in this custom build is an overclock of the GPU from 1.0 GHz to 1.2 GHz at 0.98V, resulting in improved performance.
+Linux kernel
+============
 
-## Benchmarks
-Stock GPU: ~41,000 AnTuTu score 
-to
-Overclocked GPU: ~49,000 AnTuTu score
+There are several guides for kernel developers and users. These guides can
+be rendered in a number of formats, like HTML and PDF. Please read
+Documentation/admin-guide/README.rst first.
 
-Credits:
+In order to build the documentation, use ``make htmldocs`` or
+``make pdfdocs``.  The formatted documentation can also be read online at:
 
-@[Mohamedfullhd](https://github.com/Mohamedfullhd) for his kernel [ColorX Kernel](https://github.com/Mohamedfullhd/android_kernel_xiaomi_gale)
-&
-@[wulan17](https://github.com/wulan17) for his kernel [Mayuri](https://github.com/Mayuri-Chan/android_kernel_xiaomi_gale)
+    https://www.kernel.org/doc/html/latest/
+
+There are various text files in the Documentation/ subdirectory,
+several of them using the Restructured Text markup notation.
+See Documentation/00-INDEX for a list of what is contained in each file.
+
+Please read the Documentation/process/changes.rst file, as it contains the
+requirements for building and running the kernel, and information about
+the problems which may result by upgrading your kernel.
